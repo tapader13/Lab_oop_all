@@ -1,0 +1,95 @@
+null
+ 
+    //  for (int i = 0; i < vector.size(); i++) {
+            System.out.println(vector.get(i));
+        }
+
+    // Using an enhanced for loop (foreach loop)
+    for(
+
+    Integer element:vector)
+    {
+        System.out.println(element);
+    }
+ 
+balancedRoot
+ 
+RandomNumberExample
+ 
+FindDuplicateElement
+ 
+
+            System.out.println("No duplicate numbers found. List of unique numbers: " + entry);
+ 
+.getKey()
+ 
+licAT
+ 
+import java.util.HashMap;
+import java.util.Map;
+class DuplicateNumberException extends Exception {
+    public DuplicateNumberException(String message) {
+        super(message);
+    }
+}
+public class duplicAT {
+    public static void main(String[] args) {
+        int[] arr = { 2, 3, 4, 2, 5, 6, 4, 7 };
+
+        // Create a HashMap to store elements and their counts
+        Map<Integer, Integer> elementCountMap = new HashMap<>();
+
+        // Iterate through the array and update the element count in the map
+        for (int element : arr) {
+            // If the element is already in the map, increment its count
+            if (elementCountMap.containsKey(element)) {
+                int count = elementCountMap.get(element);
+                elementCountMap.put(element, count + 1);
+            } else {
+                // If the element is not in the map, add it with count 1
+                elementCountMap.put(element, 1);
+            }
+        }
+         try {
+             for (Map.Entry<Integer, Integer> entry : elementCountMap.entrySet()) {
+            if (entry.getValue() > 1) {
+                throw new DuplicateNumberException("Duplicate number found: " + number);
+                // System.out.println("Element with multiple occurrences: " + entry.getKey());
+            }
+        }
+
+            System.out.println("No duplicate numbers found. List of unique numbers: " + numbers);
+        } catch (NumberFormatException e) {
+            System.err.println("Invalid input. Please enter valid integers.");
+        } catch (DuplicateNumberException e) {
+            System.err.println(e.getMessage());
+        }
+       
+    }
+}
+
+ 
+
+
+        // Iterate through the map to find elements with counts greater than 1
+ 
+FindDuplicateElement
+ 
+for (String strNumber : inputNumbers) {
+                int number = Integer.parseInt(strNumber);
+                if (uniqueNumbers.contains(number)) {
+                    throw new DuplicateNumberException("Duplicate number found: " + number);
+                }
+                numbers.add(number);
+                uniqueNumbers.add(number);
+ 
+Write a Java program that reads a list of integers from the user and throws an exception if any numbers are duplicates.
+ 
+ // 
+ 
+//
+ 
+//
+ 
+ //
+ 
